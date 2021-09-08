@@ -72,16 +72,17 @@ max       6210.000000  35682.000000   5358.000000      15.000100
 ## Libraries Used in the Project:
 An already trained RandomForestRegression Model is included in the repository, so you won't have to train the Model again. The libraries that you'll require to run this script on your system include: 
 
-	```
-	* Flask
-	* Joblib
-	* Numpy 
-	* Pandas
-	```
+```
+* Flask
+* Joblib
+* Numpy 
+* Pandas
+```
+
 #### In order to install these libraries on linux (ubuntu):
-	```
-	$ pip3 install Flask
-	$ pip3 install joblib
-	$ pip3 install numpy
-	$ pip3 install pandas
-	```
+```
+$ pip3 install Flask
+$ pip3 install joblib
+$ pip3 install numpy
+$ pip3 install pandas
+```
