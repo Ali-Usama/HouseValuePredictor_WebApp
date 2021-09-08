@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+ 
+  header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.30em;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: sans-serif;
+  }
+
+  h3 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: aqua;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .image {
+    margin-top: 50px;
+    margin-right: 40px;
+    float: right;
+  }
+
+ 
+  .value_container {
+    font-size: 16px;
+    font-family: monospace;
+    background-color: bisque;
+    margin-left: 0.5%;
+    
+  }
+
+  #output {
+    position: relative;
+    top: 70px;
+    left: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+  }
+
+  h4 {
+    position: relative;
+    top: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.10em;
+    position: absolute;
+    bottom: 0px;
+    font-size: 30px;
+    left: 0.3em;
+    right: 0.3em;
+    text-align: center;
+  }
+
+  .boxes {
+    position: absolute;
+    left: 40em;
+  }
+
+  .button {
+    position: relative;
+    left: 280px;
+    background-color: chocolate;
+    font-size: 20px;
+  }
+  .button:hover {
+    background-color: darkred;
+    color: aquamarine;
+  }
+
+</style>
+<header>
+  <h1>House Value Predictor</h1>
+</header>
+
+<main>
+  <h3>Please Enter values in the following fields, and press Submit to predict the House value.</h3>
+
+  <img src="../static/img/img.jpeg" alt="a house" style="width: 400px; height: 300px;" class="image">
+
+  <form method="post">
+    <div style="margin-right: 0px;" class="value_container">
+      <fieldset>
+        <legend>Ocean proximity</legend>
+          <input type="radio" name="ocean_proximity" value="1H Ocean" style="margin-left: 6em;">1H Ocean</input>
+          <input type="radio" name="ocean_proximity" value="Inland">Inland</input>
+          <input type="radio" name="ocean_proximity" value="Island">Island</input>
+          <input type="radio" name="ocean_proximity" value="Near Bay">Near Bay</input>
+          <input type="radio" name="ocean_proximity" value="Near Ocean">Near Ocean</input>
+        
+      </fieldset>
+
+      <p>Housing Median Age: <input type="text" placeholder="" name="Housing_median_age" required class="boxes"></p>
+      <p>Total Rooms: <input type="text" placeholder="" name="total_rooms" required class="boxes"></p>
+      <p>Rooms per house: <input type="text" placeholder="" name="rooms_per_house" required class="boxes"></p>
+      <p>Total Bedrooms: <input type="text" placeholder="" name="total_bedrooms" required class="boxes"></p>
+      <p>Bedrooms per house: <input type="text" placeholder="" name="bedrooms_per_house" required class="boxes"></p>
+      <p>Population: <input type="text" placeholder="" required name="population" class="boxes"></p>
+      <p>Households: <input type="text" placeholder="" required name="households" class="boxes"></p>
+      <p>Population per Household: <input type="text" placeholder="" name="pop_per_household" required class="boxes"></p>
+      <p>Median Income: <input type="text" placeholder="" required name="median_income" class="boxes"></p>
+      <button type="submit" class="button">Predict Value</button>
+    </div> 
+    
+  </form>
+
+  <div id="output">Output will be shown below:</div>
+  <h4>{{result}}</h4>
+</main>
+<footer>&copy;Developed by <a href="https://github.com/Ali-Usama">Usama Ali</a></footer>
+</html>
