@@ -5,7 +5,7 @@ This project includes a Random Forest Model, training on housing dataset, which 
 ## Project Details:
 First of all, a RandomForestRegression model is trained on the housing prices dataset, and saved using joblib. This model is then deployed on a WebApp which is developed using  Flask. Follow the steps below in order to successfully run the WebApp:
 
-	```
+```
 * First, run the `main_app.py` file by moving into the GitHub Directory, and typing `python main_app.py`
 
 * Copy the localhost address into your web browser, and a `web page` will be loaded, asking for several parameters.
@@ -14,7 +14,7 @@ First of all, a RandomForestRegression model is trained on the housing prices da
 
 * Press the `Submit` button, the predicted value will be shown on the same window.
 
-	```
+```
 
 *** This project is under development. Further modifications will be committed to this GitHub repository from time to time ***
 
