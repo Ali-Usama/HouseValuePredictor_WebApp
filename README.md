@@ -16,7 +16,7 @@ First of all, a RandomForestRegression model is trained on the housing prices da
 
 ```
 
-*** This project is under development. Further modifications will be committed to this GitHub repository from time to time ***
+__This project is under development. Further modifications will be committed to this GitHub repository from time to time__
 
 ## Dataset Description:
 The dataset used for this project can be found on this [link](https://github.com/ageron/handson-ml2/tree/master/datasets/housing). Some necessary details are given below:
