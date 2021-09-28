@@ -1,4 +1,4 @@
-# House Value Predictor GUI
+# House Value Predictor WebApp (Flask)
 
 This project includes a Random Forest Model, training on housing dataset, which is deployed on a WebApp using Flask.
 
